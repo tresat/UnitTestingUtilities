@@ -54,7 +54,7 @@ Public Class clsBaseUnitTester
         Dim mi As MethodInfo
 
         If paobjParamList IsNot Nothing Then
-            Dim paramTypes(paobjParamList.Count) As Type
+            Dim paramTypes(paobjParamList.Count - 1) As Type
 
             For intIdx As Integer = 0 To paobjParamList.Count - 1
                 paramTypes(intIdx) = paobjParamList(intIdx).GetType()
